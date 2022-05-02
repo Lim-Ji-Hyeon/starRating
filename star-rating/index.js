@@ -37,6 +37,8 @@ const StarRating = $container => {
         starList.forEach( (star, i) => {
             if (score > i) {
                 star.classList.add('selected')
+            } else{
+                star.classList.remove('selected')
             }
         })
     }
